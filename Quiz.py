@@ -17,7 +17,9 @@ print("Tipo de datos: ", matriz_3d.dtype)
 
 #punto 4
 matriz_2d = matriz_3d.reshape((15*20,100))
-print("Atributos Matriz 2D")
+print("""
+     
+Atributos de la Matriz 2D""")
 print("Dimensiones: ", matriz_2d.ndim)
 print("Tamaño 2D: ", matriz_2d.size)
 print("Forma 2D: ", matriz_2d.shape)
@@ -34,3 +36,20 @@ def cargar_archivo_mat(archivo):
 def cargar_archivo_csv(archivo):
     datos = pd.read_csv(archivo)
     return datos
+
+#punto 7
+
+def suma(matriz_2d, eje):
+    return np.sum(matriz_2d, axis = eje)
+def resta(matriz_2d, eje):
+    return np.subtract.reduce(matriz_2d, axis = eje)
+def multiplicacion(matriz_2d, eje):
+    return np.prod(matriz_2d, axis = eje)
+def divison(matriz_2d, eje):
+    return np.divide.reduce(matriz_2d, axis = eje)
+def logaritmo(matriz_2d, eje):
+    return np.log(matriz_2d, axis = eje)
+def promedio(matriz_2d, eje):
+    return np.mean(matriz_2d, axis = eje)
+def desviacion(matriz_2d, eje):
+    return np.std(matriz_2d, axis = eje)
