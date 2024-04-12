@@ -14,3 +14,8 @@ print("Dimensiones: ", matriz_3d.ndim)
 print("Tamaño: ", matriz_3d.size)
 print("Forma: ", matriz_3d.shape)
 print("Tipo de datos: ", matriz_3d.dtype)
+
+#punto 4
+matriz_2d = matriz_3d.reshape((15*20,100))
+print("Tamaño: ", matriz_2d.size)
+# print("Forma: ", matriz_2d.shape)
